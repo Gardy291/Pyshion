@@ -1,2 +1,8 @@
-print("Welcome to Pyshion")
-print("Here you can")
+import Lex
+
+
+class Main:
+        Lex()
+
+
+

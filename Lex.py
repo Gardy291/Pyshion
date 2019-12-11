@@ -1,7 +1,7 @@
 import ply.lex as lex
 import ply.yacc as yacc
 from ColorSelector import *
- 
+
 
 tokens = ['NAME',
           'TRIAD',
@@ -131,7 +131,7 @@ def run(p):
 
 
 parser = yacc.yacc()
-
+print("Welcome to Pyshion")
 while True:
     try:
         i = input('>>>')
