@@ -1,6 +1,6 @@
 import ply.lex as lex
 import ply.yacc as yacc
-import sys
+
 
 tokens = ['NAME',
           'TRIAD',
@@ -18,6 +18,7 @@ t_COMPLEMENTARY = r'complementary'
 t_SPLITCOMPLEMENTARY = r'splitcomplementary'
 t_COLOR = r'color'
 t_DASH = r'\-'
+
 
 def t_NAME(t):
     r"""[a-zA-Z_][a-zA-Z_0-9]*"""
@@ -42,26 +43,79 @@ def t_error(t):
 lexer = lex.lex()
 
 
+def p_expression(p):
+    '''
+    expression : colors
+                | var_assign
+                | complement
+                | triads
+                | split
+                | empty
+
+    '''
+    print(run(p[1]))
+
+
+def p_empty(p):
+    '''
+    empty :
+    '''
+    p[0] = None
+
+
 def p_single_colors(p):
     '''
     colors : COLOR
     '''
-    print(p[1])
+    p[0] = p[1]
 
 
 def p_two_colors(p):
     '''
     colors : COLOR DASH COLOR
     '''
-    print(p[1],p[2],p[3])
-    p[0] = ('COLOR',p[1], p[3])
+    p[0] = (p[1], p[2], p[3])
 
 
-def p_triad(p):
+def p_var_assign(p):
     '''
-    triad : TRIAD COLOR
+    var_assign : NAME EQUALS colors
+                | NAME EQUALS NAME
+    '''
+    p[0] = (p[1], p[2], p[3])
+
+
+def p_triads(p):
+    '''
+    triads : TRIAD COLOR
     '''
     p[0] = (p[1], p[2])
+
+
+def p_complement(p):
+    '''
+    complement : COMPLEMENTARY colors
+    '''
+    p[0] = (p[1], p[2])
+
+
+def p_splitcomplement(p):
+    '''
+    split : SPLITCOMPLEMENTARY colors
+    '''
+    p[0] = (p[1], p[2])
+
+
+def p_error(p):
+    print("Syntax error!!")
+
+
+def run(p):
+    if (type(p) == tuple):
+        return
+        #if
+    else:
+        return p;
 
 
 parser = yacc.yacc()
