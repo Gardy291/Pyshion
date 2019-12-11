@@ -6,24 +6,32 @@ tokens = ['NAME',
           'TRIAD',
           'COMPLEMENTARY',
           'SPLITCOMPLEMENTARY',
-          "EQUALS"
+          "EQUALS",
+          "COLOR"
           ]
-reserved = {'red','red-orange', 'orange', 'yellow-orange', 'yellow', 'yellow green', 'green', 'blue-green', 'blue', 'blue-violet', 'violet', 'red-violet'}
+reserved = {'red', 'orange', 'yellow', 'green', 'blue', 'violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
-t_LPAR = '\('
-t_RPAR = '\)'
-t_COMA = '\,'
+t_TRIAD = 'triad'
+t_COMPLEMENTARY = 'complementary'
+t_SPLITCOMPLEMENTARY = 'splitcomplementary'
+t_COLOR = 'color'
+
 
 def t_NAME(t):
     r"""[a-zA-Z_][a-zA-Z_0-9]*"""
-    t.type = 'NAME'
+    if t.value == 'triad':
+        t.type = 'TRIAD'
+    elif t.value == 'complementary':
+        t.type = 'COMPLEMENTARY'
+    elif t.value == 'splitcomplementary':
+        t.type = 'SPLITCOMPLEMENTARY'
+    elif reserved.__contains__(t.value):
+        t.type = 'COLOR'
+    else:
+        t.type = 'NAME'
     return t
 
-def t_TRIAD(t):
-    r"""[a-zA-Z_]*"""
-    t.type = 'NAME'
-    return t
 
 def t_error(t):
     print("Illegal Character", t)
@@ -31,19 +39,23 @@ def t_error(t):
 
 
 lexer = lex.lex()
-lexer.input('(a =,, orange ( )')
+lexer.input('splitcomplementary red orange yellow-green')
 for t in lexer:
     print(t)
 
+def p_single_colors(p):
+    '''
+    colors: COLOR
+    '''
+    print(p[1])
 
-# def pas(p):
-#     '''
-#     Color := reserved
-#     '''
-#     print(p[1])
-    # while True:
-    #     try:
-    #         i = input('>>>')
-    #
-    #     except EOFError:
-    #         break
+def p_two_colors(p):
+    '''
+    colors: COLOR + '-' +COLOR
+    '''
+while True:
+    try:
+        i = input('>>>')
+
+    except EOFError:
+        break
