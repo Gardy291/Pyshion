@@ -11,7 +11,7 @@ tokens = ['NAME',
           "COLOR",
           "DASH"
           ]
-reserved = {'red', 'orange', 'yellow', 'green', 'blue', 'violet'}
+reserved = {'red','red-orange','orange','yellow-orange','yellow','yellow-green','green','blue-green','blue','blue-violet','violet','red-violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
 t_TRIAD = r'triad'
@@ -83,6 +83,8 @@ def p_var_assign(p):
     var_assign : NAME EQUALS colors
                 | NAME EQUALS NAME
                 | NAME EQUALS complement
+                | NAME EQUALS split
+                | NAME EQUALS triads
     '''
     p[0] = (p[1], p[2], p[3])
 
@@ -113,15 +115,18 @@ def p_error(p):
 
 
 def run(p):
-    if (type(p) == tuple):
+    if type(p) == tuple:
         if p[0]=='complementary':
            return ColorSelector.complementary(p[1])
         elif p[0]=='triad':
             return ColorSelector.triad(p[1])
         elif p[0]=='splitcomplements':
             return ColorSelector.splitComplements(p[1])
-
+        elif p[1]=='=':
+            return run(p[2])
     else:
+        if reserved.__contains__(p):
+            return ColorSelector.allCombinations(p)
         return p;
 
 
