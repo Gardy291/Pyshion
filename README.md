@@ -12,11 +12,11 @@ pip -V
 After downloading and successfully installing [python](https://www.python.org/downloads/), download Pyshion from the [github repository](https://github.com/Gardy291/Pyshion.git). Once you have Pashion downloaded, you can put it to us by entering Python Shell, or any other python interpreter, and typing 
 
 ```bash
-C:\Users\name\Pyshion1> python server.py
+C:\Users\name\Pyshion> python server.py
 ```
 That line will established the conection between server and client. After establishing the connection you are ready to go and use our application by typing
 ```bash
-C:\Users\name\Pyshion1> python Client.py
+C:\Users\name\Pyshion> python Client.py
 ```
 ## Usage
 ```bash
