@@ -6,7 +6,7 @@ from ColorSelector import *
 tokens = ['NAME',
           'TRIAD',
           'COMPLEMENTARY',
-          'SPLITCOMPLEMENTARY',
+          'SPLITCOMPLEMENTS',
           "EQUALS",
           "COLOR",
           "DASH"
@@ -16,7 +16,7 @@ t_ignore = r' '
 t_EQUALS = r'\='
 t_TRIAD = r'triad'
 t_COMPLEMENTARY = r'complementary'
-t_SPLITCOMPLEMENTARY = r'splitcomplementary'
+t_SPLITCOMPLEMENTS = r'splitcomplements'
 t_COLOR = r'color'
 t_DASH = r'\-'
 
@@ -27,8 +27,8 @@ def t_NAME(t):
         t.type = 'TRIAD'
     elif t.value == 'complementary':
         t.type = 'COMPLEMENTARY'
-    elif t.value == 'splitcomplementary':
-        t.type = 'SPLITCOMPLEMENTARY'
+    elif t.value == 'splitcomplements':
+        t.type = 'SPLITCOMPLEMENTS'
     elif reserved.__contains__(t.value):
         t.type = 'COLOR'
     else:
@@ -75,7 +75,7 @@ def p_two_colors(p):
     '''
     colors : COLOR DASH COLOR
     '''
-    p[0] = (p[1], p[2], p[3])
+    p[0] = (p[1]+p[2]+p[3])
 
 
 def p_var_assign(p):
@@ -88,7 +88,7 @@ def p_var_assign(p):
 
 def p_triads(p):
     '''
-    triads : TRIAD COLOR
+    triads : TRIAD colors
     '''
     p[0] = (p[1], p[2])
 
@@ -102,7 +102,7 @@ def p_complement(p):
 
 def p_splitcomplement(p):
     '''
-    split : SPLITCOMPLEMENTARY colors
+    split : SPLITCOMPLEMENTS colors
     '''
     p[0] = (p[1], p[2])
 
@@ -115,6 +115,10 @@ def run(p):
     if (type(p) == tuple):
         if p[0]=='complementary':
            return ColorSelector.complementary(p[1])
+        elif p[0]=='triad':
+            return ColorSelector.triad(p[1])
+        elif p[0]=='splitcomplements':
+            return ColorSelector.splitComplements(p[1])
 
     else:
         return p;
