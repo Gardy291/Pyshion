@@ -7,16 +7,17 @@ tokens = ['NAME',
           'COMPLEMENTARY',
           'SPLITCOMPLEMENTARY',
           "EQUALS",
-          "COLOR"
+          "COLOR",
+          "DASH"
           ]
 reserved = {'red', 'orange', 'yellow', 'green', 'blue', 'violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
-t_TRIAD = 'triad'
-t_COMPLEMENTARY = 'complementary'
-t_SPLITCOMPLEMENTARY = 'splitcomplementary'
-t_COLOR = 'color'
-
+t_TRIAD = r'triad'
+t_COMPLEMENTARY = r'complementary'
+t_SPLITCOMPLEMENTARY = r'splitcomplementary'
+t_COLOR = r'color'
+t_DASH = r'\-'
 
 def t_NAME(t):
     r"""[a-zA-Z_][a-zA-Z_0-9]*"""
@@ -39,19 +40,29 @@ def t_error(t):
 
 
 lexer = lex.lex()
-for t in lexer:
-    print(t)
+
 
 def p_single_colors(p):
     '''
-    colors: COLOR
+    colors : COLOR
     '''
     print(p[1])
 
+
 def p_two_colors(p):
     '''
-    colors: COLOR - COLOR
+    colors : COLOR DASH COLOR
     '''
+    print(p[1],p[2],p[3])
+    p[0] = ('COLOR',p[1], p[3])
+
+
+def p_triad(p):
+    '''
+    triad : TRIAD COLOR
+    '''
+    p[0] = (p[1], p[2])
+
 
 parser = yacc.yacc()
 
