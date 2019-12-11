@@ -46,13 +46,13 @@ lexer = lex.lex()
 
 def p_expression(p):
     '''
-    expression : colors
+    expression : NAME
+                | colors
                 | var_assign
                 | complement
                 | triads
                 | split
                 | empty
-
     '''
     print(run(p[1]))
 
@@ -82,6 +82,7 @@ def p_var_assign(p):
     '''
     var_assign : NAME EQUALS colors
                 | NAME EQUALS NAME
+                | NAME EQUALS complement
     '''
     p[0] = (p[1], p[2], p[3])
 
