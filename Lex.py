@@ -11,7 +11,7 @@ tokens = ['NAME',
           "COLOR",
           "DASH"
           ]
-reserved = {'red', 'orange', 'yellow', 'green', 'blue', 'violet'}
+reserved = {'red','red-orange','orange','yellow-orange','yellow','yellow-green','green','blue-green','blue','blue-violet','violet','red-violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
 t_TRIAD = r'triad'
@@ -120,8 +120,9 @@ def run(p):
             return ColorSelector.triad(p[1])
         elif p[0]=='splitcomplements':
             return ColorSelector.splitComplements(p[1])
-
     else:
+        if reserved.__contains__(p):
+            return ColorSelector.allCombinations(p)
         return p;
 
 
