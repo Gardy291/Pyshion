@@ -1,5 +1,6 @@
 import ply.lex as lex
 import ply.yacc as yacc
+from ColorSelector import *
 
 
 tokens = ['NAME',
@@ -112,8 +113,9 @@ def p_error(p):
 
 def run(p):
     if (type(p) == tuple):
-        return
-        #if
+        if p[0]=='complementary':
+           return ColorSelector.complementary(p[1])
+
     else:
         return p;
 
