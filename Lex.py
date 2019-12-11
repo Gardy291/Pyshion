@@ -1,6 +1,7 @@
 import ply.lex as lex
 import ply.yacc as yacc
 from ColorSelector import *
+from Texts import *
 
 
 tokens = ['NAME',
@@ -116,28 +117,24 @@ def p_error(p):
 
 def run(p):
     if type(p) == tuple:
-        if p[0]=='complementary':
+        if p[0].lower()=='complementary':
            return ColorSelector.complementary(p[1])
-        elif p[0]=='triad':
+        elif p[0].lower()=='triad':
             return ColorSelector.triad(p[1])
-        elif p[0]=='splitcomplements':
+        elif p[0].lower()=='splitcomplements':
             return ColorSelector.splitComplements(p[1])
         elif p[1]=='=':
             return run(p[2])
     else:
-        if reserved.__contains__(p):
+        if reserved.__contains__(p.lower()):
             return ColorSelector.allCombinations(p)
+        elif p.lower() =='help':
+            Texts.help()
         return p;
 
 
 parser = yacc.yacc()
-print("¡Welcome to Pyshion! \n\nIn this application you can find the complementary, splitcomplementary and triad colors \n"
-      "By using the following syntax: \n"
-      "\tcolor\n"
-      "\tcomplementary color\n"
-      "\tsplitcomplementary color\n"
-      "\ttriad color\n"
-      "These commands will return the possible combinations. For more information type help.")
+Texts.intro()
 while True:
     try:
         i = input('>>>')

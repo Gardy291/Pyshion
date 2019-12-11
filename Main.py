@@ -1,7 +1,7 @@
 import Lex
 
 
-class Main:
+class Main(object):
         Lex()
 
 
