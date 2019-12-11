@@ -39,7 +39,6 @@ def t_error(t):
 
 
 lexer = lex.lex()
-lexer.input('splitcomplementary red orange yellow-green')
 for t in lexer:
     print(t)
 
@@ -51,11 +50,15 @@ def p_single_colors(p):
 
 def p_two_colors(p):
     '''
-    colors: COLOR + '-' +COLOR
+    colors: COLOR - COLOR
     '''
+
+parser = yacc.yacc()
+
 while True:
     try:
         i = input('>>>')
 
     except EOFError:
         break
+    parser.parse(i)
