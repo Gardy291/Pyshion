@@ -131,7 +131,13 @@ def run(p):
 
 
 parser = yacc.yacc()
-print("Welcome to Pyshion")
+print("¡Welcome to Pyshion! \n\nIn this application you can find the complementary, splitcomplementary and triad colors \n"
+      "By using the following syntax: \n"
+      "\tcolor\n"
+      "\tcomplementary color\n"
+      "\tsplitcomplementary color\n"
+      "\ttriad color\n"
+      "These commands will return the possible combinations. For more information type help.")
 while True:
     try:
         i = input('>>>')
