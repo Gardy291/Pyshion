@@ -125,7 +125,6 @@ def run(p):
             return ColorSelector.allCombinations(p)
         return p;
 
-
 parser = yacc.yacc()
 
 while True:
