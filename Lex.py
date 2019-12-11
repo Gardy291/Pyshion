@@ -3,12 +3,12 @@ import ply.yacc as yacc
 import sys
 
 tokens = ['NAME',
-          'EQUALS',
-          'LPAR',
-          'RPAR',
-          "COMA"
+          'TRIAD',
+          'COMPLEMENTARY',
+          'SPLITCOMPLEMENTARY',
+          "EQUALS"
           ]
-reserved = ('red','red-orange', 'orange', 'yellow-orange', 'yellow', 'yellow green', 'green', 'blue-green', 'blue', 'blue-violet', 'violet', 'red-violet')
+reserved = {'red','red-orange', 'orange', 'yellow-orange', 'yellow', 'yellow green', 'green', 'blue-green', 'blue', 'blue-violet', 'violet', 'red-violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
 t_LPAR = '\('
@@ -20,6 +20,10 @@ def t_NAME(t):
     t.type = 'NAME'
     return t
 
+def t_TRIAD(t):
+    r"""[a-zA-Z_]*"""
+    t.type = 'NAME'
+    return t
 
 def t_error(t):
     print("Illegal Character", t)
@@ -27,22 +31,16 @@ def t_error(t):
 
 
 lexer = lex.lex()
-lexer.input('(a =, orange ( )')
+lexer.input('(a =,, orange ( )')
 for t in lexer:
     print(t)
 
 
-def pas(p):
-    '''
-    definir las expresiones aqui
-
-    fe: expression | char
-
-
-
-
-    '''
-
+# def pas(p):
+#     '''
+#     Color := reserved
+#     '''
+#     print(p[1])
     # while True:
     #     try:
     #         i = input('>>>')
