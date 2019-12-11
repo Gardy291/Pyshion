@@ -135,10 +135,4 @@ def run(p):
 
 parser = yacc.yacc()
 Texts.intro()
-while True:
-    try:
-        i = input('>>>')
 
-    except EOFError:
-        break
-    parser.parse(i)
