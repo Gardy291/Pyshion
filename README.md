@@ -5,9 +5,9 @@ red, red-orange, orange, yellow-orange, yellow,yellow-green, green, blue-green, 
   
 You can find the complementary, splitcomplements and triad of any of these colors.  
 For those who dont know what do they mean:   
-***complementary*** combining shade, tint or tone of one color and the color opposite on the wheel.    
-***splitcomplements*** choosing one color and using the olor on each side of its complement on the color wheel   
-***triad*** color scheem in which three colors equally spaced from eachother.  
+***complementary***-combining shade, tint or tone of one color and the color opposite on the wheel.    
+***splitcomplements***-choosing one color and using the olor on each side of its complement on the color wheel   
+***triad***-color scheem in which three colors equally spaced from eachother.  
 To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
