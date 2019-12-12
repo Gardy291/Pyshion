@@ -12,6 +12,7 @@ tokens = ['NAME',
           "COLOR",
           "DASH"
           ]
+
 reserved = {'red','red-orange','orange','yellow-orange','yellow','yellow-green','green','blue-green','blue','blue-violet','violet','red-violet'}
 t_ignore = r' '
 t_EQUALS = r'\='
