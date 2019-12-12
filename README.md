@@ -1,6 +1,6 @@
 # Pyshion
 
-Pyshion is a Python server-client .exe that makes finding color combination easy, created by Cristian Lopez and Edgardo Figueroa. The name Pyshion comes from Python (Py) and fashion (shion) that combination gave birth to Pyshion. Pyshion, supports colors from the primary, secundary and tertiary colors this include the following:  
+Pyshion is a Python server-client .exe that makes finding color combination easy, created by Christian Lopez and Edgardo Figueroa. The name Pyshion comes from Python (Py) and fashion (shion) that combination gave birth to Pyshion. Pyshion, supports colors from the primary, secundary and tertiary colors this include the following:  
 red, red-orange, orange, yellow-orange, yellow,yellow-green, green, blue-green, blue, blue-violet, violet, red-violet  
   
 You can find the complementary, splitcomplements and triad of any of these colors.  
@@ -88,6 +88,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 ### Collabortors
 Edgardo Figueroa Cruz
-Christian E. Lopez Martinez  
+Christian J. Lopez Martinez  
 #### Citations
 Centeno, Antonio. “Color Wheel - How To Use Complementary Colors &amp; Colour Wheels.” Real Men Real Style, 18 Oct. 2018, www.realmenrealstyle.com/color-wheel-menswear/.
