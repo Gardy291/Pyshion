@@ -90,4 +90,4 @@ Please make sure to update tests as appropriate.
 Edgardo Figueroa Cruz (edgardo.figueroa5@upr.edu)  
 Christian J. Lopez Martinez (christian.lopez32@upr.edu)
 #### Citations
-Centeno, Antonio. “Color Wheel - How To Use Complementary Colors &amp; Colour Wheels.” Real Men Real Style, 18 Oct. 2018, www.realmenrealstyle.com/color-wheel-menswear/.
+I0.wp.com. (2019). Art escapres by cindy. [online] Available at: https://i0.wp.com/artscapesbycindy.com/wp-content/uploads/color_wheel-1.gif?zoom=1.25&resize=492%2C410 [Accessed 14 Feb. 2017].
