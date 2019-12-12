@@ -1,22 +1,37 @@
 # Pyshion
 
-Pyshion is a Python server-client .exe that makes finding color combination easy. 
+Pyshion is a Python server-client .exe that makes finding color combination easy.Pyshion supports colors from the primary, secundary and tertiary colors this include the following colors:"
+      red	red-orange
+      orange	yellow-orange
+      yellow	yellow-green
+      green	blue-green
+      blue	blue-violet
+      violet	red-violet
+You can find the complementary, splitcomplementary and triad of any of these colors.
+To find these, you just have to type in the desire action followed by the color
+	Examples:
+		>>>complementary red"
+		Output: green"
+		>>>splitcomplementary orange"
+		Output: blue-green and blue-violet"
+		>>>triad blue"
+		Output: red and yellow"
+		>>>red"
+		Output: the complementary is green"
+		the splitcomplements are yellow-green and blue-green"
+		the triads are blue and yellow"
 
 ## Installation
 
-First, make sure you have [python](https://www.python.org/downloads/) installed to be able to run Pyshion. Verify if it was installed correctly by using the following commands in the cmd. 
-
-```bash
-pip -V
-```
+First, make sure you have [python](https://www.python.org/downloads/) installed to be able to run Pyshion.
 After downloading and successfully installing [python](https://www.python.org/downloads/), download Pyshion from the [github repository](https://github.com/Gardy291/Pyshion.git). Once you have Pashion downloaded, you can put it to us by entering Python Shell, or any other python interpreter, and typing 
 
 ```bash
-C:\Users\name\Pyshion> python server.py
+C:\Users\name\Pyshion> python PyshionServer.py
 ```
-That line will established the conection between server and client. After establishing the connection you are ready to go and use our application by typing
+That command will established the conection between server and client. After establishing the connection you are ready to go and use our application by typing
 ```bash
-C:\Users\name\Pyshion> python Client.py
+C:\Users\name\Pyshion> python PyshionClient.py
 ```
 ## Usage
 ```bash
@@ -44,6 +59,8 @@ These commands will return the possible combinations. For more information type 
  the splitcomplements are blue-violet and red-violet
  the triads are blue and red
 ```
+## Demo
+bellow you will see our demo run that will walk you through the process of downloading the project from [github repository](https://github.com/Gardy291/Pyshion.git) and launching it according to the instruction.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Lbfe3-v7yE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
