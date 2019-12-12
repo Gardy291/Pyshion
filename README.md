@@ -45,6 +45,8 @@ These commands will return the possible combinations. For more information type 
  the triads are blue and red
 ```
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lbfe3-v7yE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
