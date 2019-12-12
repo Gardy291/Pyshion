@@ -87,7 +87,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 ### Collabortors
-Edgardo Figueroa Cruz
-Christian J. Lopez Martinez  
+Edgardo Figueroa Cruz (edgardo.figueroa5@upr.edu)  
+Christian J. Lopez Martinez (christian.lopez32@upr.edu)
 #### Citations
 Centeno, Antonio. “Color Wheel - How To Use Complementary Colors &amp; Colour Wheels.” Real Men Real Style, 18 Oct. 2018, www.realmenrealstyle.com/color-wheel-menswear/.
