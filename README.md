@@ -50,6 +50,32 @@ These commands will return the possible combinations. For more information type 
  the complementary is violet
  the splitcomplements are blue-violet and red-violet
  the triads are blue and red
+ 
+>>>help
+Pyshion supports colors from the primary, secondary and tertiary colors
+this include the following colors:
+	red     red-orange
+	orange  yellow-orange
+	yellow  yellow-green
+	green   blue-green
+	blue    blue-violet
+	violet  red-violet
+
+You can find the complementary, splitcomplementary and triad of any of these colors.
+To find these, you just have to type in the desire action followed by the color
+	 Examples:
+	   >>>complementary red
+	   Output: green
+	   >>>splitcomplements orange
+	   Output: blue-green and blue-violet
+	   >>>triad blue
+	   Output: red and yellow
+	   >>>red
+	   Output: the complementary is green
+		   the splitcomplements are yellow-green and blue-green
+		   the triads are blue and yellow
+
+ ¡Enjoy making combinations with Pyshion!
 ```
 ## Demo
 bellow you will see our demo run that will walk you through the process of downloading the project from [github repository](https://github.com/Gardy291/Pyshion.git) and launching it according to the instruction.
