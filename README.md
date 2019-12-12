@@ -9,7 +9,9 @@ For those who dont know what do they mean:
 ***splitcomplements***-choosing one color and using the olor on each side of its complement on the color wheel   
 ***triad***-color scheem in which three colors equally spaced from eachother.  
 ![alt text](https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png)  
-<img align="center" width="460" height="300" src="https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png">  
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png">
+</p> 
 To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
