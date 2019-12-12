@@ -5,12 +5,12 @@ red, red-orange, orange, yellow-orange, yellow,yellow-green
 green, blue-green, blue, blue-violet, violet, red-violet  
   
 You can find the complementary, splitcomplementary and triad of any of these colors.
-To find these, you just have to type in the desire action followed by the color  
+To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
 
 First, make sure you have [python](https://www.python.org/downloads/) installed to be able to run Pyshion.
-After downloading and successfully installing [python](https://www.python.org/downloads/), download Pyshion from the [github repository](https://github.com/Gardy291/Pyshion.git). Once you have Pashion downloaded, you can put it to us by entering Python Shell, or any other python interpreter, and typing 
+After downloading and successfully installing [python](https://www.python.org/downloads/), download Pyshion from the [github repository](https://github.com/Gardy291/Pyshion.git). Once you have Pashion downloaded, you can put it to use by entering Python Shell, or any other python interpreter, and typing 
 
 ```bash
 C:\Users\name\Pyshion> python PyshionServer.py
