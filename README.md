@@ -5,7 +5,7 @@ red, red-orange, orange, yellow-orange, yellow,yellow-green, green, blue-green, 
   
 You can find the complementary, splitcomplements and triad of any of these colors.  
 For those who dont know what do they mean  
-*complementary*  
+***complementary***  
 *splitcomplements*  
 *triad*  
 To find these, you just have to type in the desire action followed by the color.  
