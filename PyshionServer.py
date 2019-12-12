@@ -12,6 +12,6 @@ while True:
     print(f"Connection from {address} has been established.")
     while True:
         var =clientsocket.recv(4096).decode('utf-8')
-        print(f"Received {var}")
+        print(f"Received {var} from Client")
     clientsocket.close()
-    print("Disconect")
+    print("Disconnect")

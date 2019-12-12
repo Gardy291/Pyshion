@@ -12,7 +12,7 @@ class Texts(object):
         print("Pyshion supports colors from the primary, secundary and tertiary colors\n"
               "this include the following colors:"
               "\n\tred"
-              "\t\tred-orange\n"
+              "\tred-orange\n"
               "\torange"
               "\tyellow-orange\n"
               "\tyellow"

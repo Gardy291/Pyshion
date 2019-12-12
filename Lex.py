@@ -134,5 +134,3 @@ def run(p):
 
 
 parser = yacc.yacc()
-Texts.intro()
-
