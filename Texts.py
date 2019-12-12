@@ -8,6 +8,7 @@ class Texts(object):
             "\tsplitcomplements color\n"
             "\ttriad color\n"
             "These commands will return the possible combinations. For more information type help.")
+        
     def help():
         print("Pyshion supports colors from the primary, secondary and tertiary colors\n"
               "this include the following colors:"
