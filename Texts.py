@@ -5,11 +5,12 @@ class Texts(object):
             "By using the following syntax: \n"
             "\tcolor\n"
             "\tcomplementary color\n"
-            "\tsplitcomplementary color\n"
+            "\tsplitcomplements color\n"
             "\ttriad color\n"
             "These commands will return the possible combinations. For more information type help.")
+        
     def help():
-        print("Pyshion supports colors from the primary, secundary and tertiary colors\n"
+        print("Pyshion supports colors from the primary, secondary and tertiary colors\n"
               "this include the following colors:"
               "\n\tred"
               "\tred-orange\n"
@@ -28,7 +29,7 @@ class Texts(object):
               "\n\t Examples:"
               "\n\t   >>>complementary red"
               "\n\t   Output: green"
-              "\n\t   >>>splitcomplementary orange"
+              "\n\t   >>>splitcomplements orange"
               "\n\t   Output: blue-green and blue-violet"
               "\n\t   >>>triad blue"
               "\n\t   Output: red and yellow"
