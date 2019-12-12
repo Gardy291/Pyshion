@@ -1,6 +1,6 @@
 # Pyshion
 
-Pyshion is a Python server-client .exe that makes finding color combination easy.Pyshion supports colors from the primary, secundary and tertiary colors this include the following colors:  
+Pyshion is a Python server-client .exe that makes finding color combination easy, created by Cristian Lopez and Edgardo Figueroa. Pyshion supports colors from the primary, secundary and tertiary colors this include the following colors:  
 red, red-orange, orange, yellow-orange, yellow,yellow-green  
 green, blue-green, blue, blue-violet, violet, red-violet  
   
@@ -54,3 +54,6 @@ bellow you will see our demo run that will walk you through the process of downl
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+### Collabortors
+Edgardo Figueroa Cruz
+Christian E. Lopez Martinez 
