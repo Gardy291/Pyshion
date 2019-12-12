@@ -7,11 +7,8 @@ You can find the complementary, splitcomplements and triad of any of these color
 For those who dont know what do they mean:   
 ***complementary***-combining shade, tint or tone of one color and the color opposite on the wheel.    
 ***splitcomplements***-choosing one color and using the olor on each side of its complement on the color wheel   
-***triad***-color scheem in which three colors equally spaced from eachother. 
-<p align="center">
-  	![alt text](https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png) 
-</p>
- 
+***triad***-color scheem in which three colors equally spaced from eachother.  
+![alt text](https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png)  
 To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
