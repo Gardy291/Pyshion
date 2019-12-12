@@ -1,7 +1,7 @@
 # Pyshion
 
 Pyshion is a Python server-client .exe that makes finding color combination easy.Pyshion supports colors from the primary, secundary and tertiary colors this include the following colors:  
-      &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  red	&nbsp;&nbsp;&nbsp;&nbsp;&nbspred-orange
+      &nbsp  ;&nbsp  ;&nbsp  ;&nbsp  ;&nbsp  ;red	&nbsp;&nbsp;&nbsp;&nbsp;&nbspred-orange
       orange	yellow-orange
       yellow	yellow-green
       green	blue-green
