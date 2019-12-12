@@ -5,18 +5,7 @@ red, red-orange, orange, yellow-orange, yellow,yellow-green
 green, blue-green, blue, blue-violet, violet, red-violet  
   
 You can find the complementary, splitcomplementary and triad of any of these colors.
-To find these, you just have to type in the desire action followed by the color
-	Examples:
-		>>>complementary red"
-		Output: green"
-		>>>splitcomplementary orange"
-		Output: blue-green and blue-violet"
-		>>>triad blue"
-		Output: red and yellow"
-		>>>red"
-		Output: the complementary is green"
-		the splitcomplements are yellow-green and blue-green"
-		the triads are blue and yellow"
+To find these, you just have to type in the desire action followed by the color  
 
 ## Installation
 
