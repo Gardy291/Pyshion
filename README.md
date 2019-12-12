@@ -7,8 +7,11 @@ You can find the complementary, splitcomplements and triad of any of these color
 For those who dont know what do they mean:   
 ***complementary***-combining shade, tint or tone of one color and the color opposite on the wheel.    
 ***splitcomplements***-choosing one color and using the olor on each side of its complement on the color wheel   
-***triad***-color scheem in which three colors equally spaced from eachother.  
-![alt text](https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png)
+***triad***-color scheem in which three colors equally spaced from eachother.
+<p align="center">
+  <img width="460" height="300" https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png">
+</p>
+![alt text](https://github.com/Gardy291/Pyshion/blob/master/color_wheel.png)  
 To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
@@ -60,4 +63,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 ### Collabortors
 Edgardo Figueroa Cruz
-Christian E. Lopez Martinez 
+Christian E. Lopez Martinez  
+#### Citations
+Centeno, Antonio. “Color Wheel - How To Use Complementary Colors &amp; Colour Wheels.” Real Men Real Style, 18 Oct. 2018, www.realmenrealstyle.com/color-wheel-menswear/.
