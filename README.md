@@ -4,7 +4,7 @@ Pyshion is a Python server-client .exe that makes finding color combination easy
 red, red-orange, orange, yellow-orange, yellow,yellow-green  
 green, blue-green, blue, blue-violet, violet, red-violet  
   
-You can find the complementary, splitcomplementary and triad of any of these colors.
+You can find the complementary, splitcomplements and triad of any of these colors.
 To find these, you just have to type in the desire action followed by the color.  
 
 ## Installation
@@ -23,7 +23,7 @@ C:\Users\name\Pyshion> python PyshionClient.py
 ```bash
 ¡Welcome to Pyshion! 
 
-In this application you can find the complementary, splitcomplementary and triad colors 
+In this application you can find the complementary, splitcomplements and triad colors 
 By using the following syntax: 
 	color
 	complementary color
